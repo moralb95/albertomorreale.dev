@@ -1,2 +1,4 @@
 - name: About
-  link: "#about"
+  link: "about"
+- name: About2
+  link: "about2"

@@ -1,0 +1,53 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+a:hover {
+    cursor:pointer;
+}
+
+section.main-section {
+    background: linear-gradient(59deg, #0f9166, #16222a);
+    height: 90vh;
+}
+
+.me-img {
+    width: 12rem;
+}
+
+@include media-breakpoint-up(sm) { 
+    .ul-icons {
+        width: 50%;
+    }
+}
+
+@include media-breakpoint-up(lg) { 
+    #main-nav.navbar-scrolled {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }    
+}
+
+.ul-icons li {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    
+    img {
+        width: 3rem;
+        transition: width .5s;
+    }
+
+    img.smaller {
+        width: 2.5rem;
+    }
+
+    img:hover {
+        width: 4rem;
+    }
+}
+
