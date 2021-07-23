@@ -20,7 +20,7 @@ jobs:
         with:
           images: registry.nonnoalex.dev/moralb/moralbwebsite
           tags: |
-            type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'master') }}
+            type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'main') }}
             type=ref,event=tag
           flavor: |
             latest=false
