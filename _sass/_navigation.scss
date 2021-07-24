@@ -19,6 +19,8 @@
     box-shadow: none;
 }
 
-.nav-link.active {
-    color: yellow!important;
+.nav-link {
+    &.active {
+        color: yellow!important;
+    }
 }
