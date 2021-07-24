@@ -22,12 +22,15 @@ $(document).ready(function () {
     const el = document.getElementById("messenger");
     const fx = new TextScramble(el);
 
-    let counter = 0
+    let counter = 0;
     const next = () => {
         fx.setText(phrases[counter]).then(() => {
             setTimeout(next, 2200)
         })
-        counter = (counter + 1) % phrases.length
+
+        phrases[counter].includes("Sicily") ? fx.el.classList.add("sicily-text") : fx.el.classList.remove("sicily-text");
+
+        counter = (counter + 1) % phrases.length;
     }
 
     next();
