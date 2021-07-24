@@ -3,11 +3,10 @@ $(window).scroll(function () {
 });
 
 function scrollSmoothTo(elementId) {
-    var element = document.getElementById(elementId);
-    element.scrollIntoView({
-        block: 'start',
-        behavior: 'smooth'
-    });
+    var elementHeight = document.getElementById(elementId).offsetTop;
+    var navbarHeight = document.getElementById("main-nav").offsetHeight;
+
+    window.scrollTo(0, elementHeight - navbarHeight);
 
     return false;
 }

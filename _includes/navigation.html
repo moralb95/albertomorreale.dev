@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg text-uppercase sticky-top w-100  border-bottom" id="main-nav">
     <a class="navbar-brand text-white" onclick="scrollSmoothTo('page-top')">Moralb Portfolio</a>
-    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
     </button>
@@ -9,7 +10,7 @@
         <ul class="navbar-nav ms-auto">
             {%- for item in site.data.navigation -%}
             <li class="nav-item">
-                <a onclick="return scrollSmoothTo('{{item.link}}')" href="#{{item.link}}" class="nav-link text-white">
+                <a onclick="return scrollSmoothTo('{{item.link}}')" href="#{{item.link}}" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     {{ item.name }}
                 </a>
             </li>
