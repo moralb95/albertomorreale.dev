@@ -14,7 +14,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #007ea7;
+    background-color: #175c7b;
     border: 3px solid #212529;
     border-radius: 10px;
   }
@@ -25,13 +25,14 @@ a:hover {
 }
 
 section.main-section {
-  background: linear-gradient(0deg, #0f9166, #16222a);
+  background-color: #e9ecef;
+
   height: 90vh;
 }
 
 .me-img {
   width: 12rem;
-  border: 0.3rem solid;
+  border: 0.3rem solid #175c7b;
   border-radius: 10rem;
 }
 
@@ -60,19 +61,61 @@ section.main-section {
 }
 
 #messenger {
-  color: white;
-  text-shadow: 2px 2px #007ea7;
+  text-shadow: 2px 2px #68bd45;
 }
 
 .sicily-text {
-  color: rgba(255, 241, 0, 255) !important;
-  text-shadow: 2px 2px rgba(237, 20, 30, 255) !important;
+  color: #f2ff49 !important;
+  text-shadow: 3px 3px rgba(237, 20, 30, 255) !important;
 }
 
 .about-container span {
   font-size: 1.3rem;
 }
 
-.about-container div {
-  min-height: 7rem;
+.email-contact {
+  font-size: 1.5rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .email-contact {
+    font-size: 1.2rem;
+  }
+}
+
+.contact-section {
+  background-color: #e9ecef;
+}
+
+.bbb {
+  color: #175c7b;
+}
+
+a,
+span,
+h1 {
+  color: #e9ecef;
+}
+
+.nav-link {
+  color: #e9ecef;
+}
+
+.about-section i {
+  width: 2.5rem;
+  color: #e9ecef;
+}
+
+.fa-laptop-house {
+  font-size: 1.8rem;
+}
+
+.about-presentation {
+  text-align: justify;
+}
+
+.about-container p {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #e9ecef;
 }

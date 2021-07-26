@@ -1,26 +1,28 @@
-
-@include media-breakpoint-up(lg) { 
-    #main-nav.navbar-scrolled {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }    
+@include media-breakpoint-up(lg) {
+  #main-nav.navbar-scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 #main-nav {
-    background-color: #007ea7;
-    padding: 1.5rem;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
+  background-color: #175c7b;
+  padding: 1.5rem;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
-.nav-link {
-    &.active {
-        color: yellow!important;
-    }
+.nav-link:hover,
+.nav-link:focus {
+  color: #e9ecef;
+}
+
+.fa-bars {
+  color: #e9ecef;
 }
