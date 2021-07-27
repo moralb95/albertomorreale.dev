@@ -1,4 +1,4 @@
 - name: About
-  link: "about"
+  link: "about-section"
 - name: Contact
-  link: "about2"
+  link: "contact-section"

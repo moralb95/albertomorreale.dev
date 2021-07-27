@@ -20,14 +20,20 @@ body {
   }
 }
 
+a,
+span,
+h1 {
+  color: #e9ecef;
+}
+
 a:hover {
   cursor: pointer;
+  color: #e9ecef;
 }
 
 section.main-section {
-  background-color: #e9ecef;
-
   height: 90vh;
+  background-color: #e9ecef;
 }
 
 .me-img {
@@ -62,15 +68,11 @@ section.main-section {
 
 #messenger {
   text-shadow: 2px 2px #68bd45;
-}
 
-.sicily-text {
-  color: #f2ff49 !important;
-  text-shadow: 3px 3px rgba(237, 20, 30, 255) !important;
-}
-
-.about-container span {
-  font-size: 1.3rem;
+  &.sicily-text {
+    color: #f2ff49 !important;
+    text-shadow: 3px 3px rgba(237, 20, 30, 255) !important;
+  }
 }
 
 .email-contact {
@@ -87,18 +89,8 @@ section.main-section {
   background-color: #e9ecef;
 }
 
-.bbb {
+.blue-text {
   color: #175c7b;
-}
-
-a,
-span,
-h1 {
-  color: #e9ecef;
-}
-
-.nav-link {
-  color: #e9ecef;
 }
 
 .about-section i {
@@ -114,8 +106,14 @@ h1 {
   text-align: justify;
 }
 
-.about-container p {
-  font-size: 1.3rem;
-  margin: 0;
-  color: #e9ecef;
+.about-container {
+  p {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #e9ecef;
+  }
+
+  span {
+    font-size: 1.3rem;
+  }
 }
